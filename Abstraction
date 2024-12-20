@@ -11,3 +11,26 @@
             abstract void print(){  //invalid
 
             } 
+
+          To Achieve an Abstraction in java there are two options:
+
+          1) Using abstract class:
+            - to create an abstract class, we use abstract keyword infront of class.
+            - object creation of an abstract class is not possible.
+            - an abstract class can have abstract and non-abstract methods.
+            - a class which inherit the abstract class must have to provide implemlementation of all the abstract
+              methods of that class.
+            - an abstract class may or may not have abstract methods.
+            - it is not mandatory to have abstract methods in abstract class.
+            - as it is allowed to have non-abstract methods(i.e a method with body) hence we can not 
+              say it is always 100% abstraction.
+            - we can achieve 0-100% abstraction with abstract class.
+
+          2) Using Interface:
+            - Interface is an blueprint of a class.
+            - Interface has all abstract methods meaning no method in interface will have body.
+            - all the methods of the interface will be implemented by the implementation class.
+            - interface is a way to achieve 100% abstract, reason is interface will not have any non abstract 
+              method.
+            - interface will not have any constructor.
+            - to create an interface the keyword is interface.
