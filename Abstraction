@@ -1,0 +1,13 @@
+                                        Abstraction
+            - Abstraction is process of hiding the implementation details 
+              and only showing functionality to the users.
+            - To achieve Abstraction we have a keyword 'abstract'
+            - when a method is prefixed with abstract keyword we can only define the method and not implement it.
+            - the method which is abstract can not have body/ implementation right there.
+            ex:
+
+            abstract void print(); // valid
+
+            abstract void print(){  //invalid
+
+            } 

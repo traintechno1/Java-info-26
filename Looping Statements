@@ -1,0 +1,51 @@
+                            Looping Statements
+            
+        - Loops are used to run the piece of code again and again in a loop.
+        - In Loop starting the loop and terminating is important.
+
+      1) For Loop:
+        syntax:
+
+          for(initialiser; termination_condition; increment/decrement){
+            // the code that you want to run 'n' number of times.
+          }
+
+          ex:
+
+            for(int i = 1; i <=15; i++ ){
+              System.out.println("Dipika");
+            }
+
+      2) While Loop:
+
+          syntax:
+
+            initialiser;
+
+            while(condition){
+              the code that you want to run 'n' number of times.
+
+              increment/decrement
+            }
+
+            ex:
+
+              int i = 1;
+              while(i<=15){
+                 System.out.println("Dipika");
+                 i++;  
+              }
+
+
+        3) do-while loop:
+
+          syntax:
+              
+              initialiser;
+
+              do{
+
+                the code that you want to run 'n' number of times.
+                increment/decrement
+
+              }while(condition);

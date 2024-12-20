@@ -1,0 +1,160 @@
+                                    Operators
+
+        - Operators are the symbols which are used to perform some operation on the operands.
+
+        variable = value // allowed
+        value = anotherValue // not allowed (compile time error or syntax error)
+
+        variable1 = variable2; // This is allowed provided when value of variable2 is compatible to be stored in variable1
+
+        1) Arithmetic Operators
+            i) Addition (+)
+                ex:
+                    c = a + b;
+
+            ii) Substraction (-)
+                ex:
+                    c = b - a;
+
+            iii) Multiplication (*)
+                ex:
+                    c = b * a;
+
+            iv) Division (/)
+                ex:
+                    c = b / a;
+                
+            v) Modulus (%) -> returns the remainder
+                ex:
+                    c = a % b;
+            
+        2) Comparison Operators:
+            These operators are used to compare values and returns boolean result (true/false).
+
+            i) Equal to (==)                
+                ex:
+                    a == b 
+
+            ii) Not Equal to (!=) (Tip: it is a combination of ! and = but their is no space between ! and =)
+                ex: 
+                    a != b;
+                
+            iii) Greater Than(>)
+                ex:
+                    a > b -> going to check value of left is greater than value on right
+            
+            iv) Less Than(<)
+                ex:
+                    a < b -> going to check value of left is less than value on right
+
+            iv) Less Than equal to(<=) (Tip: it is a combination of < and = but their is no space between < and =)
+                ex:
+                    a <= b -> going to check value of left is less than or equal value on right
+
+            iv) Greater Than Equal to(>=) (Tip: it is a combination of > and = but their is no space between > and =)
+                ex:
+                    a >= b -> going to check value of left is greater than or equal to value on right
+
+        3) Assignment Operators:
+            i) Assignment (=):
+                Assigns value of right of (=) to the left variable. 
+                -On left side of = we can only have variable, we can not have value of left.
+            
+            ii) Addition Assignment (+=):
+                Ex:
+                int a = 100;
+                a += 10 ==> a = a + 10;
+
+            iii) Substraction Assignment (-=):
+                Ex:
+                int a = 100;
+                a -= 10 ==> a = a - 10;
+
+            iv) Multiplication Assignment (-=):
+                Ex:
+                int a = 100;
+                a *= 10 ==> a = a * 10;
+
+            v) Division Assignment (-=):
+                Ex:
+                int a = 100;
+                a /= 10 ==> a = a / 10;
+
+            vi) Modulus Assignment (-=):
+                Ex:
+                int a = 100;
+                a %= 10 ==> a = a % 10;
+
+        4) Logical Operators:
+            i) AND (&&):
+                In && even if single value is false result is false.
+                Truth Table:
+
+                  a      b          result
+                true    true        true
+                true    false       false
+                false   true        false
+                false   false       false
+
+                (*)
+                1   1   1
+                0   1   0
+                1   0   0
+                0   0   0
+
+
+
+                1000 * 80 * 0 => 0
+
+            ii) OR (||):
+                    In || even if single value is true result is true.
+                +
+
+                1000 + 80 + 0 => 1080
+
+                    Truth Table:
+
+                      a      b          result
+                    true    true        true
+                    true    false       true
+                    false   true        true
+                    false   false       false
+
+            iii) NOT (!):
+                It reverse the value.
+
+                Truth Table
+
+                    a           result
+                    true        false
+                    false       true
+
+        5) Unary Operators:
+            Unary operators are the operators which works only on single operand.
+            i) Increment (++):
+                
+                a) Pre Increment: 
+                    ex:
+                        ++a;  => a = a + 1;
+                
+                b) Post Increment:
+                    ex:
+                        a++;  => a = a + 1;
+
+            ii) Decrement (--):
+
+                a) Pre Decrement: 
+                    ex:
+                        --a;  => a = a - 1;
+                
+                b) Post Decrement:
+                    ex:
+                        a--;  => a = a - 1;
+
+        6) Ternary Operator: (? : )
+
+            condition ? 'if condition result is true' : 'if condition result is false';
+
+            ex:
+
+                String result =  a > 200 ? "A is bigger" : "A is smaller";

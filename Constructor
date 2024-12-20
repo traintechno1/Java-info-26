@@ -1,0 +1,18 @@
+                                        Constructor
+
+        - Constructor is a special method of a class.
+        - Constuctor has same name as a class name and does not have any return type
+        - Constructor is used to assign/initialize values to data members.
+        - If we dont write any constructor in a class, java will add one default constructor automatically.
+        - There are two typs of constructors in java.
+
+        i) Default Constructor
+            - Default constructor is a constructor without any parameters.
+            - A Class can have only one default constructor.
+
+        ii) Parameterised Constructor
+
+          - Parameterised constructor is a constructor which takes parameters as an input 
+            and while calling that constructor we need to pass values to it.
+          - We can assign value to some or all data members through parametereised constructor.
+          - Parameterised constructor automatically calls the default constructor of the class.

@@ -1,0 +1,63 @@
+                            Conditional Statements
+        
+        -- When we want to run some code based on certain condition otherwise wants to skip the 
+          execution of that code.
+
+      
+    1) if:
+
+      Syntax:
+        if(condition){
+          // when the condition is true
+        }
+
+    2) if-else:
+
+        Syntax:
+          if(condition){
+            // when the condition is true
+          }
+          else{
+            // when the condition is false
+          }
+
+    3) else-if ladder:
+        Syntax:
+          if(condition1){
+            // when the condition1 is true
+          }
+          else if(condition2){
+            // when the condition2 is true
+          }
+          else if(condition3){
+            // when the condition3 is true
+          }
+          else{
+            // When all the conditions are false
+          }
+    
+    4) Nested if-else:
+
+      Syntax: 
+        if(condition){
+          if(condition2){
+
+          }else{
+
+          }
+        }else{
+
+        }
+
+    5) Switch-case:
+        
+        // condition should generally be a variable which is whole number.
+        switch(condition){
+          case :
+
+          break;
+
+          case: 
+          
+          break;
+        }

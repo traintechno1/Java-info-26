@@ -1,0 +1,93 @@
+                                                    Introduction
+            
+            - Java is an object oriented programming language.
+            - History of java began in 1991 when James Gosling and his team at Sun Microsystem stateted a project called as Green.
+            - The goal of the project was to create a programming language for electronic devices like TV or set top boxes.
+            - As Java was looking more feasible for WWW it then gets started using in web programming.
+            - Java was released in 1995, it was then renamed to Oak.
+            - Then renamed to Java.
+            - The first version of java release was 1.0
+
+            - Now using java we can develop web, mobile or desktop applications.
+            - Sun Microsystem sold the Java to Oracle and now Oracle manages Java.
+
+              Features of Java:
+
+                Object Oriented: 
+                  - everything in java is an object, its an programming paradigm its an method to simplify the software code.
+                     
+                      - Class
+                      - Object
+                      - Inheritance
+                      - Polymorphism
+                      - Abstraction
+                      - Encapsulation
+
+                Simple: 
+                  - Java is easy to learn and syntax of is simple and easy.
+                  - Java has removed concepts like operator overloading, pointers to make program simple and avoid technical complications.
+                
+                Automatic Garbage Collection:
+                  - It automatically destroys the object created, we dont need to destroy the object once they are done with its use.
+
+                Platform Independent:
+                  - Java code gets converted into a byte code and that byte code is platform indendent.
+                  - As JVM(Java Virtual Machine) compiles the code into machine readable byte code which can be executed any number of 
+                    time, that's why java is called as write once and run anywhere language.
+                  
+                Robust:
+                  Java is really strong language because of its strong memory management, and lack of pointers which avoids security issues.
+                  Java has exception handling which helps in run time program issues.
+
+
+                
+                
+                
+            - Java Editions:
+
+            Java SE(Standard Edition)
+            Java EE(Enterprise Edition)
+            Java ME(Micro Edition)
+            Java FX
+
+
+
+            JDK, JVM, JRE:
+
+
+
+
+            Execution of .java program
+
+
+            We first compile the .java program, the .class file for each class in .java file gets created which is a machine readable code also called as bytecode, it created by JVM.
+
+
+
+            index.java        -----------> First.class    -------------->     
+        it has a class                   File gets created                  Run .class file us java
+        -- First                          using javac
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

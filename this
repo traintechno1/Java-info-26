@@ -1,0 +1,35 @@
+                            this Keyword
+
+            -- In Java this Keyword is used to access current class instance.
+            -- It is used in various contexts to resolve ambiguity.
+
+            1) It is used to access current class data members:
+
+                Class ABC{
+                    int value;
+
+                    // here int value is method variable
+                    ABC(int value){
+                        //this.value is class variable
+                        this.value = value; // this.value accesses the ABC class value variable
+                    }
+                }
+
+            2) Used to call another constructor in the same class.
+
+            To call another custructor of the same class we can use this() but it sholud always be first statement.
+
+            ex:
+
+            this()
+            this(some parameters);
+
+            3) Using this we can return complete object from a method
+
+            ex:
+
+                Human getDetails(){
+                    return this;
+                }
+            
+            4) Using this keyword to access Outer class variable inside Inner class method.

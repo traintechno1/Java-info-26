@@ -1,0 +1,56 @@
+                                Static
+            
+
+        When We create a class -> no memory gets allocated for data members and member functions
+        When we create an object of the class with new keyword -> memory gets allocated to its data member & member functions
+
+        if you create 10 object of the class-> all the 10 object gets seperate memory space.
+
+        Assume that we have 10000 students belongs to same college and we want a Student class
+
+        class Student{
+            int id;
+            String name;
+            String class;
+            String collegeName;
+        }
+
+        I want to create 10000 such Student Objects to strore data of 10000 students, 
+        here id, name, class details of 10000 students might be different but they belongs to same college so their college name
+        will be same still we are allocating memory 10000 times.
+
+        We can avoid this by using shared memory for this 10000 collegeName, by using static keyword.
+
+
+
+        Static keyword is used for memory management.
+
+        Static can be a 
+
+        1) data member:
+            The data members which me make as static are not the instance(object) level variable but those 
+            are class level data members, meaning memory to static data members gets allocated when the class 
+            gets created and not the object.
+
+            Meaning once you set value to that static data member all the objects gets that same value, if
+            in program execution we change that value all the subsequent calls will gets that changed value.
+
+
+        2) member function(method):
+
+            we can use static keyword in front of a method.
+            - once we make a method as static that method belongs to the class and not the object.
+            - we dont need an object of that class to call static method we can directly call it with class name.
+            - static method can only access static data members, non static data members can not be accessed
+                inside the static data members, reason is static method belongs to class and it can be called
+                without creating an object of that class, and if we try to use non static member functions 
+                which belongs to object we will not have any value for it if we are allowed to use it, that why java
+                does not allow it.
+
+        3) block:
+            - If we create any block {some code} that code gets executed when object of that class gets created,
+            but we can have static block static {some code} this static block gets executed when class loads into the 
+            JVM.
+            - static block belongs to class and not object so it can only access static data members and it can call
+            static member functions.
+            - static block is used to assign values to static data members.

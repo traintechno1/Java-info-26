@@ -1,0 +1,52 @@
+                                        Variable
+    - Vari + able -> Ability To change
+    - Variable is the container which can hold some value and we can change it in the program execution.
+
+
+    1000 to store this value first I need to understand what type of value is this?
+
+    Datatypes:
+        1) Built in datatypes/ Primitive Datatypes:
+
+            Whole Numbers ex: (354665)
+            - byte           -> 1Byte
+            - short          -> 2Bytes
+            - int            -> 4Bytes
+            - long           -> 8Bytes
+
+            Decimal Numbers ex: (6542.21)
+            - float          -> 4Bytes 
+            - double         -> 8Bytes
+
+            - char        -> 2Bytes can accept any single character in single quotes ex: 'a' , '1', '@' etc.
+            - boolean     -> 1Byte (true / false)
+
+
+        2) User Defined Datatypes:
+            - class
+            ex:
+            String 
+            "Technogeeks"
+
+
+        To Create a variable in Java: 
+        - As Java is typed programming language every variable in java should have datatype.
+
+        Syntax:
+
+        DataType variable_name = value; // variable declarartion with assignment
+        DataType variable_name; // variable declarartion
+
+        ex:
+
+        int val = 200; // variable declarartion with assignment
+        char c;  // variable declarartion
+
+        Keyword:
+            keywords are the reserved words which has certain meaning or work in the programming language.
+
+        Rules To give the variable name:
+            - Variable names can not be keyword.
+            - Variable names are case sensitive.
+            - Variable name should always starts with letter (a to z, A to Z or _, $)
+            - In a variable name after first character we can add numbers, and only two special symbols are allowed that is (_ or $), no other special symbols can be used in a variable name.

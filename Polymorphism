@@ -1,0 +1,80 @@
+                                        Polymorphism
+        - poly means multiple, morphus means forms of a method.
+        - A method having multiple forms is called as polymorphism.
+        - A method having different signature is a polymorphism.
+
+        What is method signature?
+        - Method name with type of parameters or number of parameters.
+        - Methods with different return types but same no of or type of parameters are not different signature.
+
+        1) void printDetails(){
+
+        }
+
+        2) void printDetails(){
+
+        }
+
+        here method 1 and 2 are not different method signature.
+
+        3) void printDetails(){
+
+        }
+
+        4) void printDetails(int a){
+
+        }
+
+        here method 3 and 4 are different method signature because 3 has 0 parameters and 4 has one parameter.
+
+        5) void printDetails(String a){
+
+        }
+
+        6) void printDetails(int a){
+
+        }
+
+        7) void printDetails(char a){
+
+        }
+
+        here method 5 and 6 are different method signature because 5 has 1 parameter of type string
+         and 6 has one parameter of type int.
+
+
+         Test t1 = new Test();
+
+        #  t1.printDetails();
+         t1.printDetails(10);
+         t1.printDetails("10");
+         t1.printDetails('10');
+
+
+        Types of Polymorphism:
+        1) Compile Time Polymorphism(Method Overloading)
+
+
+        2) Run Time Polymorphism
+
+            Which Overriden method to be called is decided at run time hence it is called as Run Time polymorphism.
+            
+            - Upcasting:
+                When Reference variable of a parent class is storing object oc child class is called as
+                upcasting.
+
+                Example:
+
+                    Class Parent{
+
+                    }
+
+                    Class Child extends Parent{
+
+                    }
+
+
+                    Parent p = new Child(); // upcasting
+
+                    p is reference of Parent class is storing (new Child()) which is object of Child class.
+

@@ -1,0 +1,37 @@
+                                        Array   
+        
+            - Array is a collection of elements of similar datatype.
+            - Array has index to access the values in it.
+            - Array index always starts with 0
+            - That means last index of the array is always size - 1;
+
+            int a = 100;
+
+            -- memory of 4 bytes gets allocated.
+            -- this memory has some memory address.
+
+
+            16GB -> 16 * 1024 * 1024 * 1024
+
+            4bytes
+
+
+            Now we want to declare an array of 10 integere values;
+                
+                4 * 10 = 40 bytes is the memory space required
+                
+            with this there will be an memory allocation of 40 bytes.
+
+            Syntax:
+
+                datatype array_name[] = new datatype[size_of_array];
+
+            ex:
+             - I want to declare an array of integer to store 10 values.
+
+                int arr[] = new int[10];
+
+            
+            - To access the array element
+
+                name_of_array[index];

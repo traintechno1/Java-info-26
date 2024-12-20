@@ -1,0 +1,150 @@
+                                Inheritance
+
+    -- Inheritance is the process of acquiring properties and methods of a parent class.
+
+            class Parent{
+                // data members
+                int id;
+                String name;
+                String address;
+            }
+
+            class Child{
+                int id;
+                String childName;
+            }
+
+    -- if Child class wants all the properties from Parent class then Child class can inherit Parent class.
+    -- To achieve the inheritance we have extends as a keyword.
+    -- Parent class is also called as superclass.
+    -- Child class is also called as subclass or derived class.
+
+
+    -- When we have parent child relation(inheritance) the child class contructor automatically calls
+        parent class default constructor, hence we should have parent class default constructor.
+
+
+    syntax:
+
+        class ParentClassName{
+            // data members
+            // member functions
+        }
+
+
+        class ChildClassName extends ParentClassName{
+            // data members
+            // member functions
+
+            // but it can use parent class data members and parent class member functions
+        }
+
+    ex:
+
+        class Child extends Parent{
+            int id;
+            String childName;
+        }
+
+
+        Class A{
+
+        }
+
+        Class B extends A{
+
+        }
+
+        here B is a Child of A, thats why relation is called as "IS-A" relation.
+
+
+
+        Based on Combinations of Parent Child relations we can have following types of inheritances in Java:
+
+        1) Single Inheritance
+        2) MultiLevel Inheritance
+        3) Hierarchical Inheritance
+        4) Hybrid Inheritance
+        5) Multiple Inheritance
+
+
+        1) Single Inheritance:
+            - in a single inheritance one child gets derived form one parent class
+
+                            Parent Class
+                                |
+                                |
+                                |
+                            Child Class
+
+        2) MultiLevel Inheritance:
+            - in multiLevel inheritance there can be n-layers of parent child relation.
+            - here class B has access to properties and methods of class A,
+            Class C has access to properties and methods of Class A and Class B.
+
+                            Class A
+                                |
+                                |
+                                |
+                            Class B
+                                |
+                                |
+                                |
+                            Class C
+
+        
+        3) Hierarchical Inheritance:
+            - In Hierarchical Inheritance their will be one parent class and multiple child classes.
+            - Here class B, C, D can access properties and methods of class A, but B can not access C or D and 
+                C can not access B and D, D can not access B and C...
+
+
+                                        Class A
+                                           |
+                --------------------------------------------------------
+                |                          |                            |
+            Class B                     Class C                     Class D
+
+            Here B, C and D are called as siblings.
+
+        
+        4) Hybrid Inheritance:
+            Hybrid Inheritance is the combination of all the inheritance types.
+
+                                        Class A
+                                           |
+                --------------------------------------------------------------
+                |                           |                                 |
+            Class B                     Class C                             Class D
+                |                                                             |
+                |                                                             |
+            Class E                                                         Class G
+                |                                                             
+                |                                                             
+            Class F                          
+
+                
+        5) Multiple Inheritance:
+            - Mutiple Inheritance is not allowed in java.
+
+                                Class A                     Class B
+                                   |                           |
+                                   |                           |
+                                    ---------------------------
+                                                |
+                                                |
+                                              Class C
+
+
+
+                        Class Person                   Class Human           
+                        - String name               - int noOfLimbs;        
+                        - int age                   - String name;  
+                        - print()                   - print()    
+
+
+                                        Class Student extends Person
+                                        display(){
+                                            print()
+                                            System.out.println("Name: " + name);
+                                        }
