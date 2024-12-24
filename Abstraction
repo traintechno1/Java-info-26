@@ -34,3 +34,31 @@
               method.
             - interface will not have any constructor.
             - to create an interface the keyword is interface.
+            - In Interface all the methods are abstract by default.
+            - it is optional to write abstract keyword in front of method name
+            - all the datamembers in interface are constants, its value has to be provided at the time of declaration
+            and it can not be changed.
+
+            Class implements interface
+
+            We can achieve multiple inheritance with Interface.
+
+                    Class A                       Class B
+                      |                             |
+                      |                             |
+                      -------------------------------
+                                    |
+                                  Class C
+
+                Not possible with class
+
+
+
+              Interface A                       Interface B
+                |                                     |
+                |                                     |
+                ---------------------------------------
+                              |
+                            Class C
+
+                Not possible with class
