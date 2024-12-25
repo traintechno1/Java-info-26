@@ -1,0 +1,5 @@
+                                    Encapsulation
+            - Hiding the information from the user.
+            - To Achieve the encapsulation in a class we make datamembers as private.
+            - when we make data members as private they can not be accessed outside of the class.
+            - to give access to use those variables outside of the class we create get and set methods.

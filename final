@@ -1,0 +1,26 @@
+                                            Final
+
+                - final keyword is used to restrict the user.
+                - we can use final keyword on
+                    - data members
+                    - member functions
+                    - class
+
+            - final datamembers:
+                - the variable which is final has to get a value when it is declared, otherwise we can assign value to it in default constructor but not in any other method.
+                - once we assign value to final variable its value can not be changed further.
+
+                ex:
+                    final float PI = 3.14f;
+
+                    PI = 5; // gets an compile time error
+
+            - final methods:
+                - a method which is final, that method can not be overriden by child class.
+                - we can not have overriden method in child class for final method.
+                - make a method as final only when you dont want the child class to override certain method.
+
+        
+            - final Class:
+                - If we make any class as final it can not be inherited.
+                - no other class can extends the final class.
