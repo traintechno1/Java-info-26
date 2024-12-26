@@ -1,0 +1,39 @@
+                                Package
+        - package is used to group classes and interfaces together.
+        - In a single package any class or interface can come only once, but in different package you can use 
+            that class name. so it is basically solving naming conflict problem.
+
+
+        Building A
+          - 101, 102, 103 ....
+        Building B
+          - 101, 102, 103 ....
+        Building C
+          - 101, 102, 103 ....
+        Building D
+          - 101, 102, 103 ....
+        Building E
+          - 101, 102, 103 ....
+
+
+        Package College
+        Class Student
+
+        Package School
+        Class Student
+
+        Packages are basically of two types:
+            1) Built In Packages
+                - these are the packages provided by java in JDK
+                ex: java.util, java.lang, java.sql ......
+            
+            2) User Defined Packages
+                To create user defined packages we use keyword as package.
+                that user defined package will have classes and interfaces.
+
+
+                - If A class or interface belongs to other package and want to use it in different package
+                    we need to import it.
+                - But if class or interface belongs to same package we can directly use it for inheritance or
+                    creating object without import.
+                    
