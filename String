@@ -1,0 +1,90 @@
+                                                        String
+
+                -- String is a sequence of characters
+                -- String value needs to be wrapped inside double quotes in Java.
+                
+                datatype: String
+
+                int 
+                float
+                double
+
+                String address = ""; // here we create object of string class
+
+
+                String name = "Pallavi";
+		        String name1 = "Pallavi"; 
+		        String name2 = "Pallavi"; 
+		        String name3 = "Pallavi"; 
+		        String name4 = "Pallavi"; 
+
+
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |             
+                    |           "Pallavi"
+                    |       String Constant Pool
+                    |--------------------------
+                                heap
+
+
+                String name = new String("Pallavi");
+                String name2 = new String("Pallavi");
+                String name3 = new String("Pallavi");
+
+
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |
+                    |           "Pallavi"   -> name2
+                    |           "Pallavi"   -> name1
+                    |           "Pallavi"   -> name
+                    |-----------------------------------
+                                heap
+
+                --- Strings in Java are immutable
+
+                String address = "Pune";
+
+                address + "India";
+
+                                                    "PuneIndia"
+                                                    "Pune"
+                                                    SCP
+
+
+                                                    
+                StringBuilder sb = new StringBuilder("Pune");
+                sb.concat("India");
+
+                sysout(sb); // PuneIndia
+
+             - To Create a mutable string in Java we can use one of the following classes
+                StringBuilder
+                StringBuffer 
+
+
+
+            String Comparison:
+
+               1) with (==)
+                  -- the == checks the reference of the strings and not the values.
+                     when we create both the strings with String Literal and both the values are same then they are refering to the same reference
+                     hence == will give true.
+                  -- But if we are using new keyword to create a string then each string will have different reference in a heap memory and hence == will
+                  give false.
+
+               2) with .equals():
+                  -- Java String class has provided equals method which helps in checking/compairing the values but not the reference. 
+                  -- If the strings are created with = or new and the string values are same we will get true, if the string values are different
+                     we will get false.
+               
+               3) with compareTo();

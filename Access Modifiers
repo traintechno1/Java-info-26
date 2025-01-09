@@ -22,8 +22,14 @@
           - able to access in subclass of same package or other package
           - not able to access in other package with object
         
-        default: 
+        default:
           - able to access in same class
           - able to access in same package
-          - able to access in subclass of same package but not able to access in other package with subclass
+          - able to access in subclass of same package and not able to access in other package with subclass
+          - not able to access in other package with object
+
+        private:
+          - able to access in a same class
+          - not able to access in same package
+          - not able to access in subclass of same package and not able to access in other package with subclass
           - not able to access in other package with object

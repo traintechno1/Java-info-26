@@ -1,0 +1,115 @@
+                                                            Exception
+
+        - Error-> a defect in a program which breaks the expected behaviour of the program.
+        - Errors are of two types->     
+            1) Compile time error
+                The errors which comes at the time of compilation of the program are called as Compile time error.
+                these errors are always better than run time error as programmer can solve them before user report the issue.
+            
+            2) Run time error
+                The errors which comes at the time of execution of the program are called as Run time error/Exception.
+                - Run time errors are not prefered over compilwe time errors.
+                - The point or a code where we get a runtime error/exception the the program break the execution right there and next lines will not be
+                executed.
+                - Handling this exceptions for not breaking the complete application is called as exception handling.
+
+        For Handling the Exception Java has provided five keywords:
+            1) try
+            2) catch
+            3) throw
+            4) throws
+            5) finally
+
+        1) try: 
+            the code were we can get an runtime error/ exception should be placed inside try block.
+
+            try{
+                // code which can generate runtime error
+            }
+
+            try block must always be followed by catch or finally.
+
+        2) catch:
+            Once the code inside the try block generates run time error/ exception we need some way to handle the exception and that happens inside the catch block.
+
+            catch can not be written alone, it always comes with try.
+
+                try{
+                    // line1
+                    // line2
+                    // line3   // error happens here on run time
+                    // line4 // this line of code will not gets executed 
+                }catch(ExceptionType object){
+
+                }
+
+        - on single try we can have multiple catch, but one catch can not have more than one try.
+
+
+            try{
+                // Line 1   // possible to get ClassNotFoundException
+                // Line 2   // possible to get ArithmeticException
+                // Line 3
+                // Line 4   // possible to get NullPointerException
+                // Line 5
+                // Line 6   // possible to get IndexOutOfBoundsException
+                // Line 7
+                // Line 8
+            }catch(ClassNotFoundException classNotFoundException){
+                // catch1
+            }catch(ArithmeticException arithmeticException){
+                // catch2
+            }catch(NullPointerException ex3){
+                // catch3
+            }catch(IndexOutOfBoundsException ex3){
+                // catch4
+            }catch(Exception ex){
+
+            }
+
+        3) throw:   
+            This is used to manually throw an excetion from a program.
+        
+        4) finally: 
+            This is a block that gets executed even if there is an exception or not.
+            mostly cleanup code is written inside a finally block. the code that you always wants to execute whether there is an exception or not gets inside the finally.
+
+
+
+
+
+
+                    Class A{
+                        main(){
+                            try{
+                                B b = new B();
+                                b.call();
+
+                            }catch(Excpetion ex){
+
+                            }
+                        }
+                    }
+
+
+
+                    Class B{
+                        void call() throws Exception{
+                            
+                                C c = new C();
+                                c.run();
+
+                        }
+                    }
+
+
+
+                    Class C{
+                        void run() throws Excpetion{
+                            Line 1// Exception happens here
+                            Line 2 
+                            Line 3
+                        }
+                    }
+
+            

@@ -1,0 +1,29 @@
+                                            Wrapper Class
+              - primitve data type
+              - Wrapper class is a object of primitive data types
+
+              
+            primitive         Wrapper Class
+              byte              Byte
+              short             Short
+              int               Integer
+              float             Float
+              double            Double
+              long              Long
+              char              Character
+              boolean           Boolean
+
+
+
+
+
+              byte b = 100;
+
+              Byte b = new Byte(100);
+
+              Autoboxing:
+                conversion of primitive to respective wrapper class is called as autoboxing.
+              
+              unboxing:
+                conversion of wrapper class to primitive class is called as autoboxing.
+              
