@@ -1,0 +1,203 @@
+
+    To Enter inside a mysql Database:
+        > mysql -u root -p 
+        Enter the password:
+        it will open a mysql server.
+
+
+    1) DDL ->
+            i) check list of all the datbases:
+                syntax:
+                    > show databases;
+            
+            ii) To create a new database:
+                syntax: 
+                    > create database <database_name>;
+                ex:
+                    > create database java_26;
+            
+            iii) To use required DB:
+                syntax: 
+                    > use <database_name>;
+                ex:
+                    > use java_26;
+            
+            iii) To create a database table:
+                syntax:
+                    > create table <table_name>( columnName1 datatype,
+                        columnName2 datatype,
+                        columnName3 datatype,
+                        columnName4 datatype,
+                        columnName5 datatype
+                    );
+
+                ex:
+                > create table user( 
+                        id int, 
+                        first_name varchar(30), 
+                        last_name varchar(30), 
+                        mobile bigint, 
+                        email varchar(50), 
+                        gender varchar(10), 
+                        city varchar(30));
+
+            iv) To List all the tables present in the database:
+                > show tables;
+
+            v) To get details of the table(To Describe the table):
+                syntax:
+                    > desc <table_name>;
+                ex:
+                    > desc user;
+            
+            vi) To Drop the table:
+                syntax:
+                    > drop table <table_name>;
+
+                ex:
+                    > drop table test;
+            
+            vii) To update the table structure: (Alter queries)
+
+                I) Add A new column to existing table:
+                
+                    Syntax:
+                        > alter table <table_name> add <column_name> datatype;
+
+                    ex:
+                        > alter table user add 
+                
+                II) Deleting a column from table:
+                    Syntax:
+                        > alter table <table_name> drop column <column_name>;
+                    
+                    ex:
+                        > alter table user drop column test;
+                
+                III) Modify column:
+                    syntax:
+                        > alter table <table_name> modify column column_name datatype;
+                    
+                    ex:
+                        > alter table user modify column email varvchar(60);
+
+
+    2) DML ->
+        i) To add a row (data) in a table:
+            > syntax:
+            > insert into <table_name>(column_name1,
+                column_name2,
+                column_name3,
+                column_name4,
+                column_name5,
+                column_name6)
+            values(value1, value2, value3, value4, value5, value6);
+
+            ex:
+            > insert into user (id, first_name, last_name, email, mobile, city, gender, state) 
+                values(1001 , 'Aishwarya', 'Avhad', 'aishwarya@gmail.com', 9842178234, 'Pune', 'F', 'Maharashtra');
+            
+            > insert into user values(1002, 'Jalim','Chakma', 8727865612, 'jalim@gmail.com', 'M', 'Pune', 'Maharashtra');
+
+        
+        ii) To get the data from table:
+            syntax:   
+                > select column_name1, column_name2, column_name3, column_name4 from table_name;
+
+            ex:
+                > select id, first_name, last_name, email, mobile, gender, city, state from user; 
+                > select id, first_name, last_name, email, mobile, gender from user;
+                > select id, first_name, last_name from user;
+                > select * from user;
+            
+            to fetch data conditionaly:
+                to write a condition we use where clause:
+
+                > syntax:
+
+                    select <list of columns> from <table_name> where condition;
+
+                    consdition can be greater than(>) 
+                               can be less than(<) 
+                               can be equal to (=)
+                               and
+                               or 
+                
+                > select * from user where gender = 'M';
+                > select * from user where id > 1002;
+                > select * from user where id < 1003;
+                > select * from user where id = 1003 and gender = 'f';
+                > select * from user where gender = 'f' or gender = 'F';
+
+        iii) To Update data from a table:
+            syntax:
+            > update <table_name> set 
+                column_name1 = value1, 
+                column_name2 = value2,
+                column_name3 = value3,
+                column_name4 = value4
+                where condition; // here where condition is super important because if we avoid where condition it will update
+                all the records in the table with above changes.
+
+            ex:
+            > update user set mobile = 8782781234, email = 'tanvi@gmail.com' where id = 1004;
+
+        iv) To delete the data from a table:
+            syntax:
+                > delete from <table_name> where condition;
+            ex:
+                > delete from user where id= 1006;
+
+        
+
+        Constraints:
+        1) Not null:
+
+            syntax for alter:
+            > alter table <table_name> modify <column_name> data type not null;
+
+            ex:
+            > alter table user modify email string(60) not null;
+         
+
+            syntax while creating the table:
+                > create table <table_name>(
+                    column_name1 datatype1,
+                    column_name2 datatype2 not null,
+                    column_name3 datatype3,
+                    column_name4 datatype4
+                )
+        
+        2) Unique:
+            syntax for alter:
+                > alter table <table_name> add unique (column_name);
+
+            ex:
+                > alter table user add unique (email);
+            
+            syntax for add:
+
+                > create table <table_name>(
+                    column1 datatype,
+                    column2 datatype,
+                    column3 datatype,
+                    unique (column1, column3)
+                );
+
+        3) Primary Key:
+            primary key is the combination of not null and unique both.
+            -- we prefer id column to be a primary key.
+            -- PK are used to uniqly identify rows.
+
+            syntax for alter:
+                > alter table <table_name> add primary key (column_name);
+
+            ex:
+                > alter table user add primary key (id);
+
+
+
+
+
+
+

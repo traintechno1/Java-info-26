@@ -1,0 +1,51 @@
+                                                    DATABASE
+        
+            -- database is used to store the data in a specific format.
+            -- datatbases are of different types based on the kind of infomration that we want to store in it.
+            -- ex : Relational Databases, non-relational databases (NoSQL), file system...
+
+                                                Relational Database
+
+            -- in a relational databases data is stored in the form of table.
+            -- table is the collection of rows and columns.
+            -- RDBMS (Relational Database Management System)
+            -- To implement RDBM we use query languages like mysql, postgresql, oracle..
+            ex:
+
+                            Table -> Movie
+
+            id          name                budget              releaseYear                 language   ----> Columns
+            1001      Pushpa 2                200                  2025                      Telugu 
+            1002      Mufasa                  250                  2024                      English     
+            
+            -- based on operation we want to perform on the database there are following categories of queries:
+            i) Data Defination Language (DDL):
+                -- DDL Queries helps in creating, managing the structure of the database and tables. 
+            ii) Data Manipulation Language (DML):
+                -- DML queriees helps in storing and manipulating the data.
+
+
+                                                    Database
+                                                        |
+                                                        |
+                                                      Table  
+                                                        |
+                                                        |
+                                                     Columns
+                                                        |
+                                                        |
+                                                       Rows
+
+                MySql Datatypes:
+
+                  tinyint
+                  smallint
+                  mediumint
+                  int
+                  bigint
+                  float
+                  double
+                  
+                          
+                    
+                

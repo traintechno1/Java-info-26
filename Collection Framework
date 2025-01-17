@@ -1,0 +1,116 @@
+                                                    Collection Framework
+                    
+                 It is a set of classes and interfaces for commonly used data structure.
+                 It has implementation for these data structures which we can directly use for building the applications.
+
+
+             In normal array we have to give the size while declaring an array, but in a runtime if we want to change the size of
+             that array it is not possible as the memory with the given size is already allocated to that array.
+
+             To create a dynamically sized array Java Collection Framework has List interface, 
+             all the classes which implements List interface provides us dynamically sized array.
+
+             
+
+             Stack-> 
+                - stack is a datastructure in which the element which comes first will exit last it is also called as (LIFO) last in First out.
+                - in stack both insertion and deletion happens at the top of the stack. 
+
+                    push -> add the element
+                    Pop-> remove the element from top of the stack
+
+
+                                
+                                |
+                                |    
+                                |    
+                                |    1000
+                                |    500 
+                                |------------|
+
+                            push(500);
+                            push(1100);
+                            pop();
+                            push(899);
+                            push(799);
+                            pop();
+                            pop();
+                            push(1000);
+                            push(700);
+                            push(900);
+                            pop();
+                            pop();
+
+
+                            What will be the final elements in the stack?
+                            
+                            500, 1000
+
+
+             100 , 200, 500, 1100, 300
+
+             Queue: 
+                - Queue is the DS which works on the principle of FIFO(First In First Out):
+                - insertion in a queue happens at the end and removal happens from start.
+
+                add -> 677
+                add -> 899
+                add -> 987
+                remove->
+                add -> 1000
+                add -> 4000
+                remove->
+                remove>
+                add -> 300 
+                remove>
+                remove>
+
+                    300
+
+
+
+        
+        Array -> 1000,   1004,   1008, 
+
+
+        Linked List:
+
+
+                        Node
+            data and address of next node
+
+                        Node
+            data and address of next node
+
+                        Node
+            data and address of next node
+
+                        Node
+            data and address of next node
+
+                        Node
+            data and address of next node
+
+                        Node
+            data and address of next node
+
+
+
+                100  64565      200  56862           300   null
+               65767            64565               56862
+
+
+               100   null
+               75512
+
+
+
+            Map<Key, Value> map = new HashMap<Key, Value>();
+            map.put("name", "Damini");
+            map.put("name", "Rajashree");
+            map.put("name2", "Rajashree");
+            map.put("email", "damini@gmail.com");
+                    
+                    
+
+
