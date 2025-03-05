@@ -194,10 +194,83 @@
 
             ex:
                 > alter table user add primary key (id);
+        
+        4) Foreign Key:
+            It is a reference of primary key of one table into the other table.
+
+            syntax:
+                > create table <table_name> (column_name datatype PK,
+                column_name datatype,
+                column_name datatype,
+                column_name4 datatype,
+                foreign key(column_name4) 
+                references table1(id));
+            ex:
+            create table orders(
+                id int primary key, 
+                product_name varchar(50), 
+                quantity int, 
+                unit_price float, 
+                tax_amount float, 
+                total_amount float, 
+                user_id int, 
+                foreign key(user_id) 
+                references user(id));
+            
 
 
+            Joins In SQL:
+                - Joins are used to fetche combined data from two tables, but those tables should have relation between them, and to form that connection
+                we have (Primary Key)PK and (Foreign Key)FK.
 
+            i) Inner Join:
 
+                syntax:
 
+                    SELECT t1.column_1, t1.column_2, t2.column_2, t2.column_3 from table_1 as t1
+                    inner join table_2 as t2
+                    on t1.pk_column = t2.fk_column;
 
+                ex:
+                select 
+                o.product_name, o.quantity, o.unit_price, o.total_amount, u.first_name, u.last_name, u.email, u.mobile 
+                from user as u 
+                inner join orders o 
+                on u.id = o.user_id;
+            
+            2) Right Join
+                    
+                syntax:
+
+                SELECT t1.column_1, t1.column_2, t2.column_2, t2.column_3 from table_1 as t1
+                right join table_2 as t2
+                on t1.pk_column = t2.fk_column;
+
+                ex:
+                select 
+                o.product_name, o.quantity, o.unit_price, o.total_amount, u.first_name, u.last_name, u.email, u.mobile 
+                from user as u 
+                right join orders o 
+                on u.id = o.user_id;
+
+                select 
+                o.product_name, o.quantity, o.unit_price, o.total_amount, u.first_name, u.last_name, u.email, u.mobile 
+                from orders o 
+                right join user u
+                on u.id = o.user_id;
+
+           3) LEFT Join
+                    
+                syntax:
+
+                SELECT t1.column_1, t1.column_2, t2.column_2, t2.column_3 from table_1 as t1
+                left join table_2 as t2
+                on t1.pk_column = t2.fk_column;
+
+                ex:
+                select 
+                o.product_name, o.quantity, o.unit_price, o.total_amount, u.first_name, u.last_name, u.email, u.mobile 
+                from user as u 
+                left join orders o 
+                on u.id = o.user_id;
 

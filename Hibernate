@@ -1,0 +1,51 @@
+                    Hibernate
+
+        - It is a Java based ORM Tool/Framework
+        - Object Relation Mapping
+
+
+            Java Object                                 Database Table
+        Class User                                          table users
+         - id                                               id
+         - name                                             user_name
+         - address                                          user_address
+
+        -- With the help of Hibernate we can map Java class name with Database Table name.
+        -- We can map class attributes/fields with table column.
+        -- Hibernate will map java datatypes with database datatypes.
+
+
+        Hibernate is implementation of JPA.
+
+        Java Persistance API-> 
+            Standardisation of all the methods to be used for Database operations.
+
+
+        Hibernate                                   Dapper
+
+        add(User u)                                 save(User u);
+        get(id)                                     find(id);
+        modify(User u)                              update(u);
+
+            Save()
+            find()
+            update()
+
+
+        Interface test{
+            void getData();
+
+            int getAmount();
+        }
+
+        Class TestImpl implements test{
+            // This class have to provide implementation of all the methods of test interface
+        }   
+
+
+
+
+
+                        Compiled
+        Java Class  ----------------> ByteCode/Machine Code
+                                      (.class)
